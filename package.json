@@ -1,0 +1,42 @@
+{
+  "name": "vite-crx-vue-ts",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@7.3.0",
+  "description": "Chrome extension development based on Vite & Vue",
+  "author": "Gn1d <https://github.com/keyding>",
+  "repository": "https://github.com/keyding/vite-crx-vue-ts",
+  "homepage": "https://github.com/keyding/vite-crx-vue-ts#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "release": "cbump --tag --commit && vite build",
+    "format": "prettier --write .",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.12",
+    "@types/chrome": "^0.0.190",
+    "@types/node": "^18.0.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "crx-bump": "^0.0.4",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "rollup": "^2.75.7",
+    "rollup-plugin-zip": "^1.0.3",
+    "sass": "^1.52.3",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.12",
+    "vue-tsc": "^0.38.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged --concurrent false"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,vue,html,css,json}": "prettier --write ."
+  }
+}

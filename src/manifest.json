@@ -1,0 +1,27 @@
+{
+  "name": "Vite Crx Vue TS",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "src/icons/icon.png",
+    "48": "src/icons/icon.png",
+    "128": "src/icons/icon.png"
+  },
+  "action": {
+    "default_title": "Click",
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/content-scripts/index.ts"],
+      "matches": ["https://www.google.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "src/background/index.ts"
+  },
+  "host_permissions": ["https://*.google.com/"],
+  "permissions": ["storage", "tabs"],
+  "options_page": "src/options/index.html",
+  "update_url": "https://clients2.google.com/service/update2/crx"
+}
