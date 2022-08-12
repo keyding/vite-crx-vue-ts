@@ -15,23 +15,23 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@crxjs/vite-plugin": "^1.0.12",
-    "@types/chrome": "^0.0.190",
-    "@types/node": "^18.0.0",
+    "@crxjs/vite-plugin": "^1.0.13",
+    "@types/chrome": "^0.0.193",
+    "@types/node": "^18.7.2",
     "@vitejs/plugin-vue": "^2.3.3",
     "crx-bump": "^0.0.4",
-    "lint-staged": "^13.0.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "rollup": "^2.75.7",
+    "rollup": "^2.77.3",
     "rollup-plugin-zip": "^1.0.3",
-    "sass": "^1.52.3",
+    "sass": "^1.54.4",
     "simple-git-hooks": "^2.8.0",
     "typescript": "^4.7.4",
-    "vite": "^2.9.12",
-    "vue-tsc": "^0.38.1"
+    "vite": "^2.9.14",
+    "vue-tsc": "^0.40.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --concurrent false"
