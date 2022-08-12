@@ -1,6 +1,6 @@
 {
   "name": "vite-crx-vue-ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.3.0",
   "description": "Chrome extension development based on Vite & Vue",
