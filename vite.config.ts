@@ -14,7 +14,6 @@ const iconPath = `src/icons/icon.png`
 const crxOptions = {
   manifest: Object.assign(manifest, {
     version: pkg.version,
-    description: pkg.description,
     icons: {
       16: iconPath,
       48: iconPath,

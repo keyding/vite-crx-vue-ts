@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Vite Crx Vue TS",
+    "description": "Extension name."
+  },
+  "extDescription": {
+    "message": "Chrome extension templates based on Vite, Vue3, TypeScript and crx/vite-plugin",
+    "description": "Extension description."
+  }
+}
